@@ -1,0 +1,15 @@
+---
+title: "Homework 5"
+author: "Courtney Maichak"
+date: "12/01/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+list.files("../data")
+```
+
