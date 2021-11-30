@@ -56,4 +56,6 @@ sum_balt <- baltimore %>%
 sum_balt <- sum_balt %>%
   mutate(cold_months = month %in% c(11, 12, 1:4)) %>%
   mutate(warm_months = month %in% c(5:10))
+  
+sum_balt
 ```
