@@ -62,5 +62,6 @@ sum_balt
 ```{r}
 sum_balt %>%
   ggplot(aes(x = date, y = n)) +
-  geom_col(aes(fill = cold_months))
+  geom_col(aes(fill = cold_months)) +
+  ggtitle("Homicides in Baltimore, MD")
 ```
