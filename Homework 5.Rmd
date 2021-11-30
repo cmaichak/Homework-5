@@ -39,6 +39,7 @@ baltimore <- homicides %>%
 baltimore
 ```
 ```{r}
+# Group by month and year
 sum_balt <- baltimore %>%
   mutate(reported_date = ymd(reported_date)) %>%
   mutate(year = year(reported_date)) %>%
