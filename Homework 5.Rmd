@@ -59,7 +59,8 @@ sum_balt <- sum_balt %>%
   
 sum_balt
 ```
-```{r}
+```{r, fig.width=10, fig.height=3}
+# Plot data
 sum_balt %>%
   ggplot(aes(x = date, y = n)) +
   geom_col(aes(fill = cold_months)) +
