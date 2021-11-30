@@ -19,3 +19,10 @@ homicides <- homicide_data
 homicides <- homicides %>%
   unite("city_name", city:state, sep = ", ")
 ```
+```{r}
+# Filtering Baltimore
+baltimore <- homicides %>% 
+  filter(city_name == "Baltimore, MD")
+
+baltimore
+```
