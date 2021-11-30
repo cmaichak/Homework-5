@@ -26,7 +26,7 @@ list.files("../data")
 ```
 ```{r}
 # Reading in data
-homicides <- homicide_data
+homicides <- read.csv("homicide-data.csv")
 
 homicides <- homicides %>%
   unite("city_name", city:state, sep = ", ")
