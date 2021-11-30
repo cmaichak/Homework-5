@@ -63,6 +63,7 @@ sum_balt
 sum_balt %>%
   ggplot(aes(x = date, y = n)) +
   geom_col(aes(fill = cold_months)) +
+  geom_smooth(span = 0.1, color = "blue") +
   ggtitle("Homicides in Baltimore, MD") +
   labs(y = "Monthly homicides", x = "Date") +
   theme(legend.position = "bottom") +
