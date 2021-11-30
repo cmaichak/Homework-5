@@ -51,3 +51,9 @@ sum_balt <- baltimore %>%
   mutate(date = paste(year, month, "15", sep = "-")) %>%
   mutate(date = ymd(date))
  ```
+```{r}
+# Separate by cold winter months and warm months
+sum_balt <- sum_balt %>%
+  mutate(cold_months = month %in% c(11, 12, 1:4)) %>%
+  mutate(warm_months = month %in% c(5:10))
+```
