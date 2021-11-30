@@ -65,5 +65,6 @@ sum_balt %>%
   geom_col(aes(fill = cold_months)) +
   ggtitle("Homicides in Baltimore, MD") +
   labs(y = "Monthly homicides", x = "Date") +
-  theme(legend.position = "bottom")  
+  theme(legend.position = "bottom") +
+  scale_fill_discrete(name = " ", labels = c("Summer", "Winter"))
 ```
