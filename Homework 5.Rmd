@@ -45,4 +45,8 @@ sum_balt <- baltimore %>%
   mutate(month = month(reported_date)) %>%
   group_by(year, month) %>%
   count()
+  
+ sum_balt <- sum_balt %>%
+  mutate(date = paste(year, month, "15", sep = "-")) %>%
+  mutate(date = ymd(date))
  ```
