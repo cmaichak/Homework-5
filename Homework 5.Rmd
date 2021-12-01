@@ -69,5 +69,5 @@ sum_balt %>%
   ggtitle("Homicides in Baltimore, MD") +
   labs(y = "Monthly homicides", x = "Date") +
   theme(legend.position = "bottom") +
-  scale_fill_discrete(name = " ", labels = c("Summer", "Winter"))
-```
+  scale_fill_manual(values = c("light gray", "light blue"), name = " ", labels = c("Summer", "Winter"))
+ ```
