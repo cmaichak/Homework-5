@@ -61,7 +61,7 @@ sum_balt
 ```
 ```{r, fig.width=10, fig.height=3}
 # Plot data
-sum_balt %>%
+balt_plot <- sum_balt %>%
   ggplot(aes(x = date, y = n)) +
   geom_col(aes(fill = cold_months)) +
   geom_smooth(span = 0.1, color = "blue", se = FALSE, size = 1) +
@@ -70,4 +70,6 @@ sum_balt %>%
   labs(y = "Monthly homicides", x = "Date") +
   theme(legend.position = "bottom") +
   scale_fill_manual(values = c("light gray", "light blue"), name = " ", labels = c("Summer", "Winter"))
+  
+  balt_plot
  ```
